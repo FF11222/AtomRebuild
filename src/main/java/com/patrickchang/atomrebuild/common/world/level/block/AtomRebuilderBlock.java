@@ -1,5 +1,6 @@
 package com.patrickchang.atomrebuild.common.world.level.block;
 
+import com.patrickchang.atomrebuild.common.world.inventory.AtomRebuilderMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
@@ -20,8 +21,8 @@ public class AtomRebuilderBlock extends Block {
 
     @SuppressWarnings("CodeBlock2Expr")
     public MenuProvider getMenuProvider(Level level, BlockPos blockPos) {
-        return new SimpleMenuProvider((containerId, inventory, player) -> {
-            return new CraftingMenu(containerId, inventory, ContainerLevelAccess.create(level, blockPos));
+        return new SimpleMenuProvider((counter, inventory, player) -> {
+            return new AtomRebuilderMenu(counter, inventory, ContainerLevelAccess.create(level, blockPos));
         }, CONTAINER_TITLE);
     }
 }
