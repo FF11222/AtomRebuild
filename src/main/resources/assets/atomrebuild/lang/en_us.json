@@ -1,5 +1,11 @@
 {
   "item.atomrebuild.atom_rebuilder_block": "Atom Rebuilder",
+  "item.atomrebuild.test_substance": "Test Substance",
+  "item.atomrebuild.hydrogen": "Hydrogen",
+  "item.atomrebuild.helium": "Helium",
+  "item.atomrebuild.lithium": "Lithium",
+  "item.atomrebuild.beryllium": "Beryllium",
+  "item.atomrebuild.carbon": "Carbon",
   "block.atomrebuild.atom_rebuilder_block": "Atom Rebuilder",
   "itemGroup.atomRebuild": "Atom Rebuild",
   "container.atom_rebuilder": "Atom Rebuilder"

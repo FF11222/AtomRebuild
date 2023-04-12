@@ -3,6 +3,7 @@ package com.patrickchang.atomrebuild.common.handler;
 import com.patrickchang.atomrebuild.AtomRebuild;
 import com.patrickchang.atomrebuild.common.world.inventory.AtomRebuilderMenu;
 import com.patrickchang.atomrebuild.common.world.item.ModCreativeModeTab;
+import com.patrickchang.atomrebuild.common.world.item.SubstanceItem;
 import com.patrickchang.atomrebuild.common.world.level.block.AtomRebuilderBlock;
 import com.patrickchang.atomrebuild.common.world.level.block.ModBlocks;
 import net.minecraft.world.inventory.MenuType;
@@ -21,6 +22,28 @@ public class RegistryHandler {
         event.getRegistry().register(new BlockItem(ModBlocks.ATOM_REBUILDER_BLOCK
                 , new Item.Properties().tab(ModCreativeModeTab.TAB_ATOM_REBUILD))
                 .setRegistryName("atom_rebuilder_block"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("test_substance"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("hydrogen"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("helium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("lithium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("beryllium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("boron"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("carbon"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("nitrogen"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("oxygen"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("fluorine"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("neon"));
     }
 
     @SubscribeEvent

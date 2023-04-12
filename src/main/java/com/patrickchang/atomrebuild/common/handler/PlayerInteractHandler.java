@@ -19,6 +19,7 @@ public class PlayerInteractHandler {
             Block block = event.getWorld().getBlockState(event.getPos()).getBlock();
             if (block == ModBlocks.ATOM_REBUILDER_BLOCK) {
                 event.getPlayer().openMenu(((AtomRebuilderBlock) block).getMenuProvider(event.getWorld(), event.getPos()));
+                event.setCanceled(true);
             }
         }
     }
