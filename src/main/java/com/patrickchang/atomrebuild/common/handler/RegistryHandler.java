@@ -44,6 +44,47 @@ public class RegistryHandler {
                 .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("fluorine"));
         event.getRegistry().register(new SubstanceItem(new Item.Properties()
                 .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("neon"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("sodium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("magnesium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("aluminum"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("silicon"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("phosphorus"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("sulfur"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("chlorine"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("argon"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("potassium "));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("calcium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("scandium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("titanium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("vanadium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("chromium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("manganese"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("iron"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("cobalt"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("nickel"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("copper"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("zinc"));
+        
     }
 
     @SubscribeEvent
