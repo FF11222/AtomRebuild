@@ -7,4 +7,5 @@ import net.minecraftforge.registries.ObjectHolder;
 @ObjectHolder(AtomRebuild.MOD_ID)
 public class ModBlocks {
     public static final Block ATOM_REBUILDER_BLOCK = null;
+//    public static final Block SUBSTANCE_BREAKER_BLOCK = null;
 }

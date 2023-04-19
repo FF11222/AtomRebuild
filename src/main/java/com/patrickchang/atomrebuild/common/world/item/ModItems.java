@@ -38,5 +38,28 @@ public class ModItems {
     public static final Item NICKEL = null;
     public static final Item COPPER = null;
     public static final Item ZINC = null;
-
+    public static final Item GALLIUM = null;
+    public static final Item GERMANIUM = null;
+    public static final Item ARSENIC = null;
+    public static final Item SELENIUM = null;
+    public static final Item BROMINE = null;
+    public static final Item KRYPTON = null;
+    public static final Item RUBIDIUM = null;
+    public static final Item STRONTIUM = null;
+    public static final Item YTTRIUM = null;
+    public static final Item ZIRCONIUM = null;
+    public static final Item NIOBIUM = null;
+    public static final Item MOLYBDENUM = null;
+    public static final Item TECHNETIUM = null;
+    public static final Item RUTHENIUM = null;
+    public static final Item RHODIUM = null;
+    public static final Item PALLADIUM = null;
+    public static final Item SILVER = null;
+    public static final Item CADMIUM = null;
+    public static final Item INDIUM = null;
+    public static final Item TIN = null;
+    public static final Item ANTIMONY = null;
+    public static final Item TELLURIUM = null;
+    public static final Item IODINE = null;
+    public static final Item XENON = null;
 }

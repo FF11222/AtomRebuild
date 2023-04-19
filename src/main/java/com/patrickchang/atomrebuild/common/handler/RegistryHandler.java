@@ -22,6 +22,9 @@ public class RegistryHandler {
         event.getRegistry().register(new BlockItem(ModBlocks.ATOM_REBUILDER_BLOCK
                 , new Item.Properties().tab(ModCreativeModeTab.TAB_ATOM_REBUILD))
                 .setRegistryName("atom_rebuilder_block"));
+//        event.getRegistry().register(new BlockItem(ModBlocks.SUBSTANCE_BREAKER_BLOCK
+//                , new Item.Properties().tab(ModCreativeModeTab.TAB_ATOM_REBUILD))
+//                .setRegistryName("substance_breaker_block"));
         event.getRegistry().register(new SubstanceItem(new Item.Properties()
                 .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("test_substance"));
         event.getRegistry().register(new SubstanceItem(new Item.Properties()
@@ -84,12 +87,58 @@ public class RegistryHandler {
                 .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("copper"));
         event.getRegistry().register(new SubstanceItem(new Item.Properties()
                 .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("zinc"));
-        
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("gallium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("germanium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("arsenic"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("selenium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("bromine"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("krypton"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("rubidium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("strontium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("yttrium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("zirconium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("molybdenum"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("technetium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("ruthenium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("rhodium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("palladium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("silver"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("cadmium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("indium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("tin"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("antimony"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("tellurium"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("iodine"));
+        event.getRegistry().register(new SubstanceItem(new Item.Properties()
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("xenon"));
     }
 
     @SubscribeEvent
     public static void onBlockRegistry(final RegistryEvent.Register<Block> event) {
         event.getRegistry().register(new AtomRebuilderBlock().setRegistryName("atom_rebuilder_block"));
+        event.getRegistry().register(new AtomRebuilderBlock().setRegistryName("atom_breaker_block"));
     }
 
     @SubscribeEvent
