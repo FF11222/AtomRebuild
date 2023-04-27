@@ -22,9 +22,9 @@ public class RegistryHandler {
         event.getRegistry().register(new BlockItem(ModBlocks.ATOM_REBUILDER_BLOCK
                 , new Item.Properties().tab(ModCreativeModeTab.TAB_ATOM_REBUILD))
                 .setRegistryName("atom_rebuilder_block"));
-//        event.getRegistry().register(new BlockItem(ModBlocks.SUBSTANCE_BREAKER_BLOCK
-//                , new Item.Properties().tab(ModCreativeModeTab.TAB_ATOM_REBUILD))
-//                .setRegistryName("substance_breaker_block"));
+       event.getRegistry().register(new BlockItem(ModBlocks.SUBSTANCE_BREAKER_BLOCK
+               , new Item.Properties().tab(ModCreativeModeTab.TAB_ATOM_REBUILD))
+               .setRegistryName("substance_breaker_block"));
         event.getRegistry().register(new SubstanceItem(new Item.Properties()
                 .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("test_substance"));
         event.getRegistry().register(new SubstanceItem(new Item.Properties()
@@ -133,6 +133,7 @@ public class RegistryHandler {
                 .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("iodine"));
         event.getRegistry().register(new SubstanceItem(new Item.Properties()
                 .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("xenon"));
+        
     }
 
     @SubscribeEvent
