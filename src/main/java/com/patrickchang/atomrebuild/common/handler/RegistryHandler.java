@@ -1,28 +1,18 @@
 package com.patrickchang.atomrebuild.common.handler;
 
 import com.patrickchang.atomrebuild.AtomRebuild;
-import com.patrickchang.atomrebuild.common.world.inventory.AtomBreakerMenu;
 import com.patrickchang.atomrebuild.common.world.inventory.AtomRebuilderMenu;
 import com.patrickchang.atomrebuild.common.world.item.ModCreativeModeTab;
 import com.patrickchang.atomrebuild.common.world.item.SubstanceItem;
-import com.patrickchang.atomrebuild.common.world.level.block.AtomBreakerBlock;
 import com.patrickchang.atomrebuild.common.world.level.block.AtomRebuilderBlock;
 import com.patrickchang.atomrebuild.common.world.level.block.ModBlocks;
-import com.patrickchang.atomrebuild.common.world.level.block.entity.AtomBreakerEntity;
-import com.patrickchang.atomrebuild.common.world.level.block.entity.ModBlockEntityType;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-
-import static com.patrickchang.atomrebuild.common.world.level.block.ModBlocks.ATOM_BREAKER_BLOCK;
 
 @SuppressWarnings("ConstantConditions")
 @Mod.EventBusSubscriber(modid = AtomRebuild.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -32,9 +22,9 @@ public class RegistryHandler {
         event.getRegistry().register(new BlockItem(ModBlocks.ATOM_REBUILDER_BLOCK
                 , new Item.Properties().tab(ModCreativeModeTab.TAB_ATOM_REBUILD))
                 .setRegistryName("atom_rebuilder_block"));
-        event.getRegistry().register(new BlockItem(ModBlocks.ATOM_REBUILDER_BLOCK
-                , new Item.Properties().tab(ModCreativeModeTab.TAB_ATOM_REBUILD))
-                .setRegistryName("substance_breaker_block"));
+//        event.getRegistry().register(new BlockItem(ModBlocks.SUBSTANCE_BREAKER_BLOCK
+//                , new Item.Properties().tab(ModCreativeModeTab.TAB_ATOM_REBUILD))
+//                .setRegistryName("substance_breaker_block"));
         event.getRegistry().register(new SubstanceItem(new Item.Properties()
                 .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("test_substance"));
         event.getRegistry().register(new SubstanceItem(new Item.Properties()
@@ -74,7 +64,7 @@ public class RegistryHandler {
         event.getRegistry().register(new SubstanceItem(new Item.Properties()
                 .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("argon"));
         event.getRegistry().register(new SubstanceItem(new Item.Properties()
-                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("potassium"));
+                .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("potassium "));
         event.getRegistry().register(new SubstanceItem(new Item.Properties()
                 .tab(ModCreativeModeTab.TAB_ATOM_REBUILD)).setRegistryName("calcium"));
         event.getRegistry().register(new SubstanceItem(new Item.Properties()
@@ -148,18 +138,11 @@ public class RegistryHandler {
     @SubscribeEvent
     public static void onBlockRegistry(final RegistryEvent.Register<Block> event) {
         event.getRegistry().register(new AtomRebuilderBlock().setRegistryName("atom_rebuilder_block"));
-        event.getRegistry().register(new AtomBreakerBlock(BlockBehaviour.Properties.of(Material.METAL).strength()).setRegistryName("atom_breaker_block"));
+        event.getRegistry().register(new AtomRebuilderBlock().setRegistryName("atom_breaker_block"));
     }
 
     @SubscribeEvent
     public static void onMenuTypeRegistry(final RegistryEvent.Register<MenuType<?>> event) {
         event.getRegistry().register(new MenuType<>(AtomRebuilderMenu::new).setRegistryName("atom_rebuilder"));
-        event.getRegistry().register(new MenuType<>(AtomBreakerMenu::new).setRegistryName("atom_breaker"));
-    }
-
-    @SubscribeEvent
-    public static void onBlockEntityTypeRegistry(final RegistryEvent.Register<BlockEntityType<?>> event) {
-        event.getRegistry().register("atom_breaker", () -> BlockEntityType.Builder.of(AtomBreakerEntity::new
-                , ATOM_BREAKER_BLOCK).build(null));
     }
 }

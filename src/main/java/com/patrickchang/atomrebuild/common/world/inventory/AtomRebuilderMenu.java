@@ -13,15 +13,15 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Optional;
 
-public class AtomRebuilderMenu extends AbstractContainerMenu {
+public class SubstanceBreakerMenu extends AbstractContainerMenu {
     public final AlchemyTable alchemyTable;
     private final ContainerLevelAccess access;
 
-    public AtomRebuilderMenu(int containerId, Inventory inventory) {
+    public SubstanceBreakerMenu(int containerId, Inventory inventory) {
         this(containerId, inventory, ContainerLevelAccess.NULL);
     }
 
-    public AtomRebuilderMenu(int containerId, Inventory inventory, ContainerLevelAccess access) {
+    public SubstanceBreakerMenu(int containerId, Inventory inventory, ContainerLevelAccess access) {
         super(ModMenuType.ATOM_REBUILDER, containerId);
         this.alchemyTable = new AlchemyTable(8, 18, 160, 52);
         this.access = access;
