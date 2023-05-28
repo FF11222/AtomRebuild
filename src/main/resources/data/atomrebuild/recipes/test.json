@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "test",
+  "ingredient": {
+    "item": "minecraft:water_bucket"
+  },
+  "result": "atomrebuild:oxygen",
+  "experience": 0,
+  "cookingtime": 100
+}

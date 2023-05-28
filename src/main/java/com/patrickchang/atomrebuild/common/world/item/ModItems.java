@@ -2,11 +2,13 @@ package com.patrickchang.atomrebuild.common.world.item;
 
 import com.patrickchang.atomrebuild.AtomRebuild;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.ObjectHolder;
 
 @ObjectHolder(AtomRebuild.MOD_ID)
 public class ModItems {
     public static final Item ATOM_REBUILDER_BLOCK = null;
+    public static final Item ATOM_BREAKER_BLOCK = null;
     public static final Item TEST_SUBSTANCE = null;
     public static final Item HYDROGEN = null;
     public static final Item HELIUM = null;

@@ -1,5 +1,6 @@
 package com.patrickchang.atomrebuild.client.gui.screens;
 
+import com.patrickchang.atomrebuild.client.gui.screens.inventory.AtomBreakerScreen;
 import com.patrickchang.atomrebuild.client.gui.screens.inventory.AtomRebuilderScreen;
 import com.patrickchang.atomrebuild.common.world.inventory.ModMenuType;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -11,5 +12,6 @@ public class ModMenuScreens {
     @SuppressWarnings("ConstantConditions")
     public static void registerScreens() {
         MenuScreens.register(ModMenuType.ATOM_REBUILDER, AtomRebuilderScreen::new);
+        MenuScreens.register(ModMenuType.ATOM_BREAKER, AtomBreakerScreen::new);
     }
 }
